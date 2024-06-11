@@ -1,0 +1,72 @@
+
+        /* Basic styling for the slideshow container */
+        .slideshow-container {
+            max-width: 600px;
+            position: relative;
+            margin: auto;
+			overflow: hidden;
+        }
+
+        /* Styling for the individual slides */
+        .mySlides {
+            display: none;
+            width: auto; /* Set width to auto to maintain aspect ratio */
+            height: 400px; /* Set fixed height for consistency */
+            margin: 0 auto; /* Center horizontally */
+        }
+
+        /* Styling for the rotating disc */
+        .disc-container {
+            position: absolute;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .disc {
+            width: 10px;
+            height: 10px;
+            background-color: black;
+            border-radius: 50%;
+            margin: 0 5px;
+            transition: transform 0.5s ease;
+        }
+
+        /* Styling for the navigation arrows */
+        .prev, .next {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            width: auto;
+            padding: 16px;
+            color: black;
+            font-weight: bold;
+            font-size: 18px;
+            transition: 0.6s ease;
+            opacity: 1;
+        }
+
+        /* Hover effect for the navigation arrows */
+        .prev:hover, .next:hover {
+            opacity: 1;
+        }
+
+        /* Positioning the "previous" arrow */
+        .prev {
+            left: 0;
+            border-radius: 0 3px 3px 0;
+        }
+
+        /* Positioning the "next" arrow */
+        .next {
+            right: 0;
+            border-radius: 3px 0 0 3px;
+        }
+
+        /* Displaying the first slide initially */
+        .mySlides:first-child {
+            display: block;
+        }
